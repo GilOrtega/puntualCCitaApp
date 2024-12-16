@@ -18,6 +18,7 @@ public class HomeController {
 	@GetMapping("/detalleServicio")
 	public String mostrarDetalle(Model model) {
 		Servicio servicio = new Servicio();
+		servicio.setId(1);
 		servicio.setNombre("Corte de cabello");
 		servicio.setDescripcion("Renueva tu estilo con un corte de cabello personalizado según tus preferencias. Nuestros expertos estilistas están listos para asesorarte y crear un look que se ajuste a tu personalidad y necesidades. ¡Elige tu cita y transforma tu imagen!");
 		servicio.setPrecio(150.00);
